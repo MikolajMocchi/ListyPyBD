@@ -1,28 +1,49 @@
-list = [1,2,3,4,5,6,7,8,9]
+lista = [1,2,3,4,5,6,7]
+
 
 slownik = {
-    'imie' = 'Nigel'
-    'wiek' = '17'
-    'home' = 'place'
-}
+    'name' : 'John',
+    'age' : '30',
+    'height' : 'good'
+ }
+1.
+print(lista[0])
+print(lista[6])
 
-#zad 1
-print(list[0])
-print(list[8])
+2.
+lista.append(69)
+print(lista)
 
-#zad 2
-list.append(10)
+3.
+lista.remove(7)
+print(lista)
 
-#zad 3
-list.remove(4)
-
-#zad 4
-if 2 in list:
+4.
+if 2 in lista:
     print('Tak')
 else:
     print('Nie')
 
-#zad 5
-print(list[0:8])
+5.
+for lista in range(7):
+    print(lista)
 
+6.
+slownik = {
+    'John' : '30',
+    'Noli' : '10000000'
+  }
 
+7.
+slownik["status"] = "married"
+print(slownik)
+
+8.
+del slownik['height']
+print(slownik)
+9.
+if 'name' in slownik:
+    print('Prawda')
+10. 
+for key, value in slownik.items():
+    print(f"Klucz: {key}, wartosc: {value}")
