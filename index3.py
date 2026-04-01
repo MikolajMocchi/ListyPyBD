@@ -1,49 +1,50 @@
-lista = [1,2,3,4,5,6,7]
+my_dict = {
+   'imie': 'Jan',
+   'nazwisko': 'Kowalski',
+   'wiek': 30,
+   'miasto': 'Warszawa'
+}
 
+# 1. 
+# print(my_dict["imie"])
 
-slownik = {
-    'name' : 'John',
-    'age' : '30',
-    'height' : 'good'
- }
-1.
-print(lista[0])
-print(lista[6])
+# 2.
+# my_dict["age"] = 35
+# print(my_dict)
 
-2.
-lista.append(69)
-print(lista)
+# 3.
+# my_dict["email"] = "jan.kowalski@gmail.com"
+# print(my_dict)
 
-3.
-lista.remove(7)
-print(lista)
+# 4.
+# del my_dict["miasto"]
+# print(my_dict)
 
-4.
-if 2 in lista:
-    print('Tak')
-else:
-    print('Nie')
+# 5.
+# if 'nazwisko' in my_dict:
+#     print('istenieje')
+# else:
+#     print('Nie istnieje')
 
-5.
-for lista in range(7):
-    print(lista)
+# 6.
+# for key in my_dict:
+#     print(f"Klucz: {key}, Wartość: {my_dict[key]}")
 
-6.
-slownik = {
-    'John' : '30',
-    'Noli' : '10000000'
-  }
+# 7.
+# for value in my_dict.values():
+#     print(f"Wartość: {value}")
 
-7.
-slownik["status"] = "married"
-print(slownik)
+# 8.
+# for key, value in my_dict.items():
+#     print(f"Klucz: {key}, Wartość: {value}")
 
-8.
-del slownik['height']
-print(slownik)
-9.
-if 'name' in slownik:
-    print('Prawda')
-10. 
-for key, value in slownik.items():
-    print(f"Klucz: {key}, wartosc: {value}")
+# 9.
+# if 'nazwisko' in my_dict:
+#     print('Istnieje')
+
+10.
+del my_dict['imie']
+del my_dict['nazwisko']
+del my_dict['wiek']
+del my_dict['miasto']
+print(my_dict)
